@@ -1,10 +1,9 @@
 import '../src/css/style.css';
 import '../src/css/nav-bar.css';
 import '../src/css/footer.css';
+import '../src/css/home.css';
 
-import createNavBar from './pages/nav-bar';
-import createFooter from './pages/footer';
+import loadHome from '../src/pages/home';
 
 
-createNavBar();
-createFooter();
+loadHome();

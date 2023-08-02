@@ -1,0 +1,43 @@
+.main {
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 62px - 17px);
+    justify-content: center;
+    align-items: center;
+}
+
+#home-background {
+    position: absolute;
+    object-fit: cover;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 62px);
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    z-index: 1;
+}
+
+.street-food {
+    display: block;
+    width: 75%;
+    width: 259px;
+    margin: 0 auto;
+    margin-right: 15px;
+    margin-bottom: 18px;
+}

@@ -1,8 +1,9 @@
 #footer-background {
     position: absolute;
     object-fit: cover;
-    height: 700px;
+    height: 720px;
     width: 100%;
+    left: 0;
 }
 
 video {

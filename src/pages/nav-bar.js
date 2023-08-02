@@ -13,14 +13,11 @@ function createNavBar() {
     const sectionHeaderLogo = document.createElement('div');
     sectionHeaderLogo.classList.add('section-logo');
     navBar.appendChild(sectionHeaderLogo);
-
-    const sectionLinkLogo = document.createElement('a');
-    sectionHeaderLogo.appendChild(sectionLinkLogo);
-
+    
     const headerLogo = document.createElement('img');
     headerLogo.classList.add('header-logo');
     headerLogo.src = B16Logo;
-    sectionLinkLogo.appendChild(headerLogo);
+    sectionHeaderLogo.appendChild(headerLogo);
 
     const headerMenu = document.createElement('div');
     headerMenu.classList.add('header-menu');
@@ -42,7 +39,7 @@ function createNavBar() {
     frills.classList.add('header-frills');
     header.appendChild(frills);
 
-    sectionLinkLogo.appendChild(headerLogo);
+    sectionHeaderLogo.appendChild(headerLogo);
 }
 
 export default createNavBar;
