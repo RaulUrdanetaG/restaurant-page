@@ -123,6 +123,7 @@ video {
 .column-home {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     background-color: white;
     border: 2px solid #E2E2E2;
@@ -145,6 +146,12 @@ video {
     font-size: 28px;
     letter-spacing: 4px;
     padding: 8px;
+}
+
+.column-home a:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #DDB78E;
+    transition: all 0.07s;
 }
 
 .first-img {
