@@ -1,3 +1,8 @@
+header{
+    position: relative;
+    z-index: 10;
+}
+
 .section-header{
     height: 65px;
 }
@@ -33,7 +38,6 @@
 .header-menu a{
     font-size: 21px;
     font-weight: 400;
-    transform: scaleX(0.8);
 }
 
 .header-menu a:hover{
