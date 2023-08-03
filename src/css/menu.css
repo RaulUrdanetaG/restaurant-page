@@ -1,0 +1,56 @@
+.menu-container{
+    margin: 0 18vw;
+}
+
+.main-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.item-img{
+    margin: 0 0 20px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 0 8px;
+}
+
+.name {
+    font-size: 30px;
+    color: #333333;
+    font-weight: 300;
+    margin: 0;
+}
+
+.attribute-img {
+    width: 32px;
+}
+
+.separator{
+    width: 70px;
+    height: 2px;
+    background-color: #494949;
+    margin: 8px auto;
+}
+
+.item-description {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    margin: 19.6px 1.5vw;
+    margin-top: 0;
+    color: #494949;
+    text-align: center;
+    line-height: 25px;
+}
