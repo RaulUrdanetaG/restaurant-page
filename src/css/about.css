@@ -11,12 +11,13 @@
     top: -15px;
 }
 
-.about-title{
+.about-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 155px;
-    margin-left: 365px;
+    padding-right: 31vw;
+    margin: 0 auto;
 }
 
 .black-bar-about {
@@ -43,14 +44,117 @@
     background-size: cover;
 }
 
-.black-bar-footer{
+.black-bar-footer {
     letter-spacing: 6px;
     width: 350px;
-    font-family: 'Bitter',serif;
+    font-family: 'Bitter', serif;
     font-size: 12px;
     line-height: 1.6;
     text-align: center;
     color: white;
     font-weight: 700;
     margin: 0;
+}
+
+.history-section {
+    margin: 0 auto;
+}
+
+.history-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.history-container::after {
+    content: '';
+    background: url(../assets/images/about-images/illustration-beet.png);
+    position: absolute;
+    width: 270px;
+    height: 350px;
+    z-index: -1;
+    right: 270px;
+}
+
+.history-title {
+    display: flex;
+    align-items: end;
+    font-family: 'merriweather', serif;
+    font-size: 16px;
+    color: #494949;
+    margin: 0 15vw 30px;
+    max-width: 670px;
+    font-weight: 300;
+}
+
+.history-title-text {
+    margin: 0;
+    text-overflow: ellipsis;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.history-title p:first-child {
+    font-size: 6rem;
+    margin: 0;
+    max-height: 100px;
+    color: #333333;
+    margin-right: 5px;
+}
+
+.history-quote {
+    letter-spacing: 1.5px;
+    word-spacing: 2.5px;
+    margin: 0 7vw 36px;
+    font-size: 43px;
+    color: #333333;
+}
+
+.history-text {
+    margin: 0 15vw 50px;
+    font-family: 'merriweather', serif;
+    font-size: 16px;
+    color: #494949;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.memories-hero {
+    background: url(../assets/images/about-images/our-memories_medium.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 70px 0;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    background: #333333;
+}
+
+.container-memories-text {
+    position: relative;
+    z-index: 3;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.container-memories-text p {
+    color: white;
+    letter-spacing: 4px;
+    max-width: 700px;
+    font-size: 110px;
+    line-height: .9;
 }
