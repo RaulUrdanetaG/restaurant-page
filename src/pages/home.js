@@ -1,5 +1,7 @@
-import createNavBar from './nav-bar';
-import createFooter from './footer';
+import createNavBar from '../sections/nav-bar';
+import createFooter from '../sections/footer';
+
+import loadMenu from './menu';
 
 
 function createHome() {
@@ -105,6 +107,8 @@ function createHome() {
 
     const columnA2 = document.createElement('a');
     columnA2.innerText = 'SEE LOCATION';
+    columnA2.href = 'https://www.google.com/maps/place/Block+16/@41.2574411,-95.9377708,17z/data=!3m1!4b1!4m6!3m5!1s0x87938fad9a1ac4c7:0x2255528dd3e9b8fd!8m2!3d41.2574411!4d-95.9377708!16s%2Fg%2F11gzlymkl?entry=ttu';
+    columnA2.target = '_blank';
     column2.appendChild(columnA2);
 
     const column3 = document.createElement('div');

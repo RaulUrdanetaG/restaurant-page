@@ -1,5 +1,5 @@
-import createNavBar from './nav-bar';
-import createFooter from './footer';
+import createNavBar from '../sections/nav-bar';
+import createFooter from '../sections/footer';
 
 function createMenuItem(img, title, attribute, description) {
 

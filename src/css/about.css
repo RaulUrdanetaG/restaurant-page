@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500&family=Montserrat:wght@300&display=swap');
+
+.hero-about {
+    display: flex;
+    background: url(../assets/images/about-images/about-us-hero_large.jpg) center center no-repeat;
+    position: relative;
+    min-height: 855px;
+    max-width: 1905px;
+    background-size: cover;
+    z-index: -2;
+    top: -15px;
+}
+
+.about-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 155px;
+    margin-left: 365px;
+}
+
+.black-bar-about {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 11px;
+    width: 420px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 14px;
+    background: url(../assets/images/menu-images/icons/black-bar_bg.svg)center center no-repeat;
+}
+
+.black-bar-about::after {
+    content: '';
+    background: url(../assets/images/about-images/illustration-wheat.png) center center no-repeat;
+    width: 200px;
+    height: 153px;
+    position: absolute;
+    top: 55px;
+    z-index: -1;
+    background-size: cover;
+}
+
+.black-bar-footer{
+    letter-spacing: 6px;
+    width: 350px;
+    font-family: 'Bitter',serif;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+}

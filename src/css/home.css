@@ -146,6 +146,7 @@ video {
     font-size: 28px;
     letter-spacing: 4px;
     padding: 8px;
+    text-decoration: none;
 }
 
 .column-home a:hover{
