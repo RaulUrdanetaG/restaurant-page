@@ -1,22 +1,147 @@
-.menu-container{
-    margin: 0 18vw;
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500&family=Montserrat:wght@300&display=swap');
+
+.menu-container {
+    margin: 0 18vw 0 17.5vw;
 }
 
-.main-menu{
+.main-menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    column-gap: 0px;
+    margin: 0;
 }
 
-.menu-item{
+.menu-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-content: center;
+    justify-items: center;
     margin-bottom: 30px;
 }
 
-.item-img{
-    margin: 0 0 20px;
+.item-img {
+    max-width: 570px;
+    margin: 0 auto 20px;
+}
+
+.menu-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 43px;
+}
+
+.black-bar{
+    margin: 0;
+    font-family: 'Montserrat',sans-serif;
+    padding: 13px;
+    width: 437px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 14px;
+    background: url(../assets/images/menu-images/icons/black-bar_bg.svg)center center no-repeat;
+}
+
+.gold-spaced{
+    color: #DDB78E;
+    font-size: 15px;
+    font-family: 'Bitter',serif;
+    letter-spacing: 5px;
+    margin: 0;
+    margin-bottom: 25px ;
+    padding-bottom: 18px;
+}
+
+.option p{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.options-container{
+    display: flex;
+    gap: 20px;
+    align-self: end;
+    align-content: center;
+    margin: 0;
+    margin-bottom: 16px;
+    margin-right: 25px;
+}
+
+.option{
+    display: flex;
+    gap: 5px;
+}
+
+.options-img-s{
+    width: 20px;
+}
+
+.options-img-v {
+    width: 16px;
+}
+
+.usa-today-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url(../assets/images/menu-images/illustration_alton-brown.png) center center no-repeat;
+}
+
+.usa-img {
+    margin: 0 auto 20px;
+}
+
+.usa-title {
+    font-size: 34px;
+    margin: 0 10% 24px;
+}
+
+.usa-subtitle {
+    font-size: 17px;
+    margin: 0 10% 40px;
+    font-family: 'merriweather', serif;
+    color: #494949;
+    line-height: 30px;
+}
+
+.usa-separator {
+    height: 7px;
+    width: 80%;
+    margin: 0 0 30px;
+    content: '';
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+}
+
+.usa-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 25% 17px;
+}
+
+.usa-article-title {
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Bitter', serif;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.usa-article-date {
+    color: #666666;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin: 0;
 }
 
 .title {
@@ -24,7 +149,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 0 0 8px;
+    margin: 0;
 }
 
 .name {
@@ -34,12 +159,21 @@
     margin: 0;
 }
 
-.attribute-img {
-    width: 32px;
+.attribute-img-s {
+    width: 28px;
 }
 
-.separator{
-    width: 70px;
+.attribute-img-v {
+    width: 18px;
+}
+
+.attribute-img-sv {
+    width: 50px;
+}
+
+
+.separator {
+    width: 60px;
     height: 2px;
     background-color: #494949;
     margin: 8px auto;
@@ -53,4 +187,96 @@
     color: #494949;
     text-align: center;
     line-height: 25px;
+    font-weight: 300;
+}
+
+.daily-special-menu {
+    display: flex;
+    margin: 0 0 60px;
+}
+
+.secondary-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    margin-bottom: 70px;
+}
+
+.sides-drinks-menu-title {
+    display: flex;
+    gap: 50px;
+}
+
+.sides-drinks-title::before {
+    position: absolute;
+    top: 51%;
+    right: 60%;
+    width: 50%;
+    height: 1px;
+    content: '';
+    background-color: #CCCCCC;
+}
+
+.sides-drinks-title::after {
+    position: absolute;
+    top: 51%;
+    left: 60%;
+    width: 50%;
+    height: 1px;
+    content: '';
+    background-color: #CCCCCC;
+}
+
+.sides-drinks-title {
+    display: flex;
+    align-content: center;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+    font-family: "Bitter", serif;
+    font-size: 15px;
+    color: #DDB78E;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    ;
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+.sides {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: #333333;
+}
+
+.combo-container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 20px 0;
+    height: 105px;
+    border: 2px solid #CCCCCC;
+    align-items: center;
+    justify-content: center;
+    grid-row: 2/4;
+}
+
+.combo-container p {
+    text-align: center;
+}
+
+.combo-title {
+    color: #333333;
+    font-size: 30px;
+    margin: 0 0 6px;
+}
+
+.combo-text {
+    font-family: 'Merriweather', serif;
+    color: #494949;
+    font-size: 16px;
+    margin: 0 0 22px;
 }
