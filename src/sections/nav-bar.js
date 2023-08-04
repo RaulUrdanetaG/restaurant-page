@@ -24,14 +24,17 @@ function createNavBar() {
     navBar.appendChild(headerMenu);
 
     const homeTitle = document.createElement('a');
+    homeTitle.classList.add('home-link');
     homeTitle.innerText = 'HOME';
     headerMenu.appendChild(homeTitle);
 
     const menutTitle = document.createElement('a');
+    menutTitle.classList.add('menu-link')
     menutTitle.innerText = 'MENU';
     headerMenu.appendChild(menutTitle);
 
     const aboutTitle = document.createElement('a');
+    aboutTitle.classList.add('about-link');
     aboutTitle.innerText = 'ABOUT';
     headerMenu.appendChild(aboutTitle);
 

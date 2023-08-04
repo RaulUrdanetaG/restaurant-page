@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 0px;
+    max-width: 1200px;
     margin: 0;
 }
 
@@ -20,7 +21,7 @@
 }
 
 .item-img {
-    max-width: 570px;
+    max-width: 520px;
     margin: 0 auto 20px;
 }
 

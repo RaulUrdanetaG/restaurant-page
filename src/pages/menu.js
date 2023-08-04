@@ -98,7 +98,7 @@ function createMenuItemNoImg(title, attribute, description) {
 
 function createMenu() {
     const content = document.getElementById('content');
-    
+
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('menu-container');
     content.appendChild(menuContainer);
@@ -297,6 +297,10 @@ function createMenu() {
 }
 
 function loadMenu() {
+
+    const main = document.getElementById('content');
+    main.innerHTML = '';
+    
     createNavBar();
     createMenu();
     createFooter();

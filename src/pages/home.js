@@ -89,6 +89,7 @@ function createHome() {
     column1.append(columnP1);
 
     const columnA1 = document.createElement('a');
+    columnA1.classList.add('menu-link');
     columnA1.innerText = 'SEE MENU';
     column1.appendChild(columnA1);
 
@@ -125,12 +126,17 @@ function createHome() {
     column3.append(columnP3);
 
     const columnA3 = document.createElement('a');
+    columnA3.classList.add('about-link');
     columnA3.innerText = 'ABOUT US';
     column3.appendChild(columnA3);
 
 }
 
 function loadHome() {
+    
+    const main = document.getElementById('content');
+    main.innerHTML = '';
+
     createNavBar();
     createHome();
     createFooter();

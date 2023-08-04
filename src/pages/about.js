@@ -50,9 +50,15 @@ function createAbout() {
     overlayText.classList.add('container-memories-text');
     overlayText.innerHTML = '<p>WE SERVE FOOD BASED ON OUR BEST MEMORIES.</p>';
     overlayHero.appendChild(overlayText);
+
+    
 }
 
 function loadAbout() {
+
+    const main = document.getElementById('content');
+    main.innerHTML = '';
+    
     createNavBar();
     createAbout();
     createFooter();
