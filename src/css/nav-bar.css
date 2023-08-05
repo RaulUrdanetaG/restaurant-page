@@ -59,12 +59,12 @@ header {
 @media (max-width:700px) {
     .section-header {
         justify-content: space-between;
+        margin: 0 20px;
     }
     
     .section-logo{
         position: unset;
         align-content: center;
-        margin-left: 10px;
     }
 
 }
