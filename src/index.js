@@ -29,8 +29,6 @@ function checkButtons(){
             }
         })
     })
-
-    console.log(links)
 }
 
 checkButtons();

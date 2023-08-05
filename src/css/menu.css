@@ -42,7 +42,6 @@
     font-size: 15px;
     color: white;
     margin-bottom: 14px;
-    background: url(../assets/images/menu-images/icons/black-bar_bg.svg)center center no-repeat;
 }
 
 .gold-spaced{
@@ -91,7 +90,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url(../assets/images/menu-images/illustration_alton-brown.png) center center no-repeat;
 }
 
 .usa-img {

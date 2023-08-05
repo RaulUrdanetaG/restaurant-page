@@ -1,6 +1,8 @@
 import createNavBar from '../sections/nav-bar';
 import createFooter from '../sections/footer';
 
+import blackBar from '../assets/images/menu-images/icons/black-bar_bg.svg';
+import usaTodayBack from '../assets/images/menu-images/illustration_alton-brown.png';
 import spicyIcon from '../assets/images/menu-images/icons/spicy-icon.svg';
 import veganIcon from '../assets/images/menu-images/icons/vegan-icon.svg';
 import spicyAndVeganIcon from '../assets/images/menu-images/icons/spicy-and-vegan-icon.svg';
@@ -123,6 +125,7 @@ function createMenu() {
 
     const menuTitle = document.createElement('h2');
     menuTitle.classList.add('black-bar');
+    menuTitle.style.background = `url('${blackBar}') center center no-repeat`;
     menuTitle.innerText = 'MENU';
     menuHeader.appendChild(menuTitle);
 
@@ -163,6 +166,7 @@ function createMenu() {
 
     const usaTodayContainer = document.createElement('div');
     usaTodayContainer.classList.add('usa-today-container');
+    usaTodayContainer.style.background = `url('${usaTodayBack}') center center no-repeat`;
     mainMenuContainer.appendChild(usaTodayContainer);
 
     const usaTodayImg = document.createElement('img');
