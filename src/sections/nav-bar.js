@@ -45,6 +45,7 @@ function createNavBar() {
     header.appendChild(frills);
 
     sectionHeaderLogo.appendChild(headerLogo);
+
 }
 
 export default createNavBar;
