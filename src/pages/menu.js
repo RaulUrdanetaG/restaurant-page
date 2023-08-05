@@ -1,13 +1,22 @@
 import createNavBar from '../sections/nav-bar';
 import createFooter from '../sections/footer';
 
+import spicyIcon from '../assets/images/menu-images/icons/spicy-icon.svg';
+import veganIcon from '../assets/images/menu-images/icons/vegan-icon.svg';
+import spicyAndVeganIcon from '../assets/images/menu-images/icons/spicy-and-vegan-icon.svg';
+import usaTodayLogo from '../assets/images/menu-images/usa-today.png';
+import homeBurger from '../assets/images/home-media/home-buguer.png';
+import facebookLogo from '../assets/images/home-media/icons/logo-facebook.svg';
+import pulledPork from '../assets/images/menu-images/pulled-pork-roll.jpg';
+import friedChiken from '../assets/images/menu-images/fried-chicken.jpg';
+
 function createMenuItem(img, title, attribute, description) {
 
     let menuItem = document.createElement('div');
     menuItem.classList.add('menu-item');
 
     let itemImg = document.createElement('img');
-    itemImg.src = `../src/assets/images/menu-images/${img}`;
+    itemImg.src = img;
     itemImg.classList.add('item-img');
     menuItem.appendChild(itemImg);
 
@@ -23,17 +32,17 @@ function createMenuItem(img, title, attribute, description) {
     if (attribute === 'spicy') {
         let attribute = document.createElement('img');
         attribute.classList.add('attribute-img-s');
-        attribute.src = '../src/assets/images/menu-images/icons/spicy-icon.svg';
+        attribute.src = spicyIcon;
         itemTitle.appendChild(attribute);
     } else if (attribute === 'vegan') {
         let attribute = document.createElement('img');
         attribute.classList.add('attribute-img-v');
-        attribute.src = '../src/assets/images/menu-images/icons/vegan-icon.svg';
+        attribute.src = veganIcon;
         itemTitle.appendChild(attribute);
     } else if (attribute === 'spicy-vegan') {
         let attribute = document.createElement('img');
         attribute.classList.add('attribute-img-sv');
-        attribute.src = '../src/assets/images/menu-images/icons/spicy-and-vegan-icon.svg';
+        attribute.src = spicyAndVeganIcon;
         itemTitle.appendChild(attribute);
     } else {
 
@@ -68,17 +77,17 @@ function createMenuItemNoImg(title, attribute, description) {
     if (attribute === 'spicy') {
         let attribute = document.createElement('img');
         attribute.classList.add('attribute-img-s');
-        attribute.src = '../src/assets/images/menu-images/icons/spicy-icon.svg';
+        attribute.src = spicyIcon;
         itemTitle.appendChild(attribute);
     } else if (attribute === 'vegan') {
         let attribute = document.createElement('img');
         attribute.classList.add('attribute-img-v');
-        attribute.src = '../src/assets/images/menu-images/icons/vegan-icon.svg';
+        attribute.src = veganIcon;
         itemTitle.appendChild(attribute);
     } else if (attribute === 'spicy-vegan') {
         let attribute = document.createElement('img');
         attribute.classList.add('attribute-img-sv');
-        attribute.src = '../src/assets/images/menu-images/icons/spicy-and-vegan-icon.svg';
+        attribute.src = spicyAndVeganIcon;
         itemTitle.appendChild(attribute);
     } else {
 
@@ -123,23 +132,23 @@ function createMenu() {
 
     const veganOption = document.createElement('div');
     veganOption.classList.add('option');
-    veganOption.innerHTML = `<img class = 'options-img-v' src='../src/assets/images/menu-images/icons/vegan-icon.svg'><p class = 'vegan-text'>Vegan Option</p>`;
+    veganOption.innerHTML = `<img class = 'options-img-v' src='${veganIcon}'><p class = 'vegan-text'>Vegan Option</p>`;
     optionsContainer.appendChild(veganOption);
 
     const spicyOption = document.createElement('div');
     spicyOption.classList.add('option');
-    spicyOption.innerHTML = `<img class = 'options-img-s' src='../src/assets/images/menu-images/icons/spicy-icon.svg'><p class = 'vegan-text'>Available Spicy</p>`;
+    spicyOption.innerHTML = `<img class = 'options-img-s' src='${spicyIcon}'><p class = 'vegan-text'>Available Spicy</p>`;
     optionsContainer.appendChild(spicyOption);
 
     const mainMenuContainer = document.createElement('div');
     mainMenuContainer.classList.add('main-menu');
     menuContainer.appendChild(mainMenuContainer);
 
-    mainMenuContainer.appendChild(createMenuItem('pulled-pork-roll.jpg',
+    mainMenuContainer.appendChild(createMenuItem(pulledPork,
         'PULLED PORK ROLL',
         'spicy',
         'Slow-braised Truebridge Farm pork served on a sourdough hoagie with Swiss cheese, mayo, caramelized onion, mustard, and pickles.'));
-    mainMenuContainer.appendChild(createMenuItem('fried-chicken.jpg',
+    mainMenuContainer.appendChild(createMenuItem(friedChiken,
         'PC FARM FRIED CHICKEN THIGHS',
         'spicy',
         'Order yourself 2, 3, or 4 pieces of super-juicy PCF buttermilk soaked, crispy chicken. So tasty! Not to be missed. Try it "Nashville hot"!'));
@@ -153,7 +162,7 @@ function createMenu() {
 
     const usaTodayImg = document.createElement('img');
     usaTodayImg.classList.add('usa-img');
-    usaTodayImg.src = '../src/assets/images/menu-images/usa-today.png';
+    usaTodayImg.src = usaTodayLogo;
     usaTodayContainer.appendChild(usaTodayImg);
 
     const usaTodayTitle = document.createElement('p');
@@ -199,7 +208,7 @@ function createMenu() {
     burguerLink.classList.add('left-info');
     burguerLink.href = "https://www.facebook.com/Block-16-274838819236148";
     burguerLink.target = '_blank';
-    burguerLink.innerHTML = `<img src='../src/assets/images/home-media/home-buguer.png'>`;
+    burguerLink.innerHTML = `<img src= '${homeBurger}'>`;
     dailySpecialContainer.appendChild(burguerLink);
 
     const rightInfoContainer = document.createElement('div');
@@ -217,7 +226,7 @@ function createMenu() {
     fbCallout.classList.add('fb-callout');
     fbCallout.href = 'https://www.facebook.com/Block-16-274838819236148';
     fbCallout.target = '_blank';
-    fbCallout.innerHTML = 'FOLLOW US ON FACEBOOK TO SEE DAILY SPECIALS IN YOUR "FEED"! <img src = "../src/assets/images/home-media/icons/logo-facebook.svg">';
+    fbCallout.innerHTML = `FOLLOW US ON FACEBOOK TO SEE DAILY SPECIALS IN YOUR "FEED"! <img src = "${facebookLogo}">`;
     rightInfoContainer.appendChild(fbCallout);
 
     const secondaryMenu = document.createElement('div');

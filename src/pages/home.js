@@ -6,6 +6,9 @@ import mainVideo from '../assets/images/home-media/homeVideo.mp4';
 import farmToTable from '../assets/images/home-media/icons/farm-to-table.svg';
 import homeBurguer from '../assets/images/home-media/home-buguer.png';
 import facebookLogo from '../assets/images/home-media/icons/logo-facebook.svg';
+import freeHighFives from '../assets/images/home-media/icons/free-high-fives.svg';
+import rollUpSleeves from '../assets/images/home-media/icons/roll-up-your-sleeves.svg';
+import realFood from '../assets/images/home-media/icons/real-local-food.svg';
 
 function createHome() {
     const content = document.getElementById('content');
@@ -83,7 +86,7 @@ function createHome() {
     oneThird.appendChild(column1);
 
     const titleImg1 = document.createElement('img');
-    titleImg1.src = `../src/assets/images/home-media/icons/free-high-fives.svg`;
+    titleImg1.src = freeHighFives;
     titleImg1.classList.add('first-img');
     column1.appendChild(titleImg1);
 
@@ -101,7 +104,7 @@ function createHome() {
     oneThird.appendChild(column2);
 
     const titleImg2 = document.createElement('img');
-    titleImg2.src = `../src/assets/images/home-media/icons/roll-up-your-sleeves.svg`;
+    titleImg2.src = rollUpSleeves;
     titleImg2.classList.add('second-img');
     column2.appendChild(titleImg2);
 
@@ -120,7 +123,7 @@ function createHome() {
     oneThird.appendChild(column3);
 
     const titleImg3 = document.createElement('img');
-    titleImg3.src = `../src/assets/images/home-media/icons/real-local-food.svg`;
+    titleImg3.src = realFood;
     titleImg3.classList.add('third-img');
     column3.appendChild(titleImg3);
 
