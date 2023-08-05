@@ -2,11 +2,9 @@
 
 .hero-about {
     display: flex;
-    background: url(../assets/images/about-images/about-us-hero_large.jpg) center center no-repeat;
     position: relative;
     min-height: 855px;
     max-width: 1905px;
-    background-size: cover;
     z-index: -2;
     top: -15px;
 }
@@ -30,12 +28,11 @@
     font-size: 14px;
     color: white;
     margin-bottom: 14px;
-    background: url(../assets/images/menu-images/icons/black-bar_bg.svg)center center no-repeat;
 }
 
 .black-bar-about::after {
     content: '';
-    background: url(../assets/images/about-images/illustration-wheat.png) center center no-repeat;
+    background: var(--blackbar-after) center center no-repeat;
     width: 200px;
     height: 153px;
     position: absolute;
@@ -71,7 +68,7 @@
 
 .history-container::after {
     content: '';
-    background: url(../assets/images/about-images/illustration-beet.png);
+    background: var(--history-after);
     position: absolute;
     width: 270px;
     height: 350px;
@@ -123,7 +120,6 @@
 }
 
 .memories-hero {
-    background: url(../assets/images/about-images/our-memories_medium.jpg) center center no-repeat;
     background-size: cover;
     position: relative;
     padding: 70px 0;
