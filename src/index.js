@@ -9,6 +9,8 @@ import loadHome from '../src/pages/home';
 import loadMenu from './pages/menu';
 import loadAbout from './pages/about';
 
+loadHome();
+
 function checkButtons(){
     
     const links = Array.from(document.querySelectorAll('a'));
@@ -32,7 +34,7 @@ function checkButtons(){
     })
 }
 
-loadHome();
+
 checkButtons();
 
 
