@@ -9,6 +9,7 @@ import facebookLogo from '../assets/images/home-media/icons/logo-facebook.svg';
 import freeHighFives from '../assets/images/home-media/icons/free-high-fives.svg';
 import rollUpSleeves from '../assets/images/home-media/icons/roll-up-your-sleeves.svg';
 import realFood from '../assets/images/home-media/icons/real-local-food.svg';
+import homeFrills from '../assets/images/latice.png';
 
 import onion from '../assets/images/home-media/illustration-onion.png';
 import chicken from '../assets/images/home-media/illustration-chicken.png';
@@ -49,6 +50,7 @@ function createHome() {
 
     const homeCallout = document.createElement('section');
     homeCallout.classList.add('home-callouts');
+    homeCallout.style.setProperty('--home-frills',`url('${homeFrills}')`);
     main.appendChild(homeCallout);
 
     const dailySpecialContainer = document.createElement('div');

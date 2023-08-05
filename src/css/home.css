@@ -48,7 +48,7 @@ video {
 .home-callouts {
     padding: 80px 0;
     background-color: white;
-    background: url(../assets/images/latice.png);
+    background: var(--home-frills);
 }
 
 .daily-special {

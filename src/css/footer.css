@@ -54,7 +54,7 @@ footer h4::before{
     width: 105px;
     height: 73px;
     margin-left: 10px;
-    background: url(../assets/images/home-media/logo-footer.png) center center no-repeat;
+    background: var(--b16Footer) center center no-repeat;
 }
 
 .store-hours{

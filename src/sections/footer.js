@@ -1,5 +1,6 @@
 import footerVideoBack from '../assets/images/home-media/footerVideo.mp4';
 import gitHubLogo from '../assets/images/home-media/icons/logo-github.svg'
+import footerB16 from '../assets/images/home-media/logo-footer.png';
 
 function createFooter() {
     const content = document.getElementById('content');
@@ -30,6 +31,7 @@ function createFooter() {
 
     const infoTitle = document.createElement('h4');
     infoTitle.id = 'logo-footer';
+    infoTitle.style.setProperty('--b16Footer',`url('${footerB16}')`);
     infoTitle.innerText = 'HOURS OF OPERATION';
     infoContainer.appendChild(infoTitle);
 
