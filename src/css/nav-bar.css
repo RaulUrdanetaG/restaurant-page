@@ -41,6 +41,7 @@ header {
 .header-menu a {
     font-size: 21px;
     font-weight: 400;
+    color: black;
 }
 
 .header-menu a:hover {
