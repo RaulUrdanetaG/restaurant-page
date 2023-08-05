@@ -19,12 +19,15 @@ function checkButtons(){
         button.addEventListener('click',()=>{
             if (button.classList.contains('menu-link')) {
                 loadMenu();
+                window.scroll(0, 0);
                 checkButtons();
             }else if (button.classList.contains('home-link')) {
                 loadHome();
+                window.scroll(0, 0);
                 checkButtons();
             }else if (button.classList.contains('about-link')) {
                 loadAbout();
+                window.scroll(0, 0);
                 checkButtons();
             }
         })

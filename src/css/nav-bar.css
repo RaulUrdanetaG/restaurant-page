@@ -1,53 +1,54 @@
-header{
+header {
     position: relative;
     z-index: 10;
 }
 
-.section-header{
+.section-header {
     height: 62px;
 }
 
-.section-header{
+.section-header {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
 }
 
-.section-logo{
+.section-logo {
     display: flex;
     border: 1px solid white;
     position: absolute;
     background-color: black;
     top: 5px;
-    left: 0px;   
+    left: 0px;
     max-width: 130px;
     align-items: center;
     justify-content: center;
 }
 
-.header-logo{
+.header-logo {
+    width: 7vw;
     max-width: 128px;
     height: auto;
 }
 
-.header-menu{
+.header-menu {
     display: flex;
     color: black;
     gap: 10vw;
 }
 
-.header-menu a{
+.header-menu a {
     font-size: 21px;
     font-weight: 400;
 }
 
-.header-menu a:hover{
+.header-menu a:hover {
     cursor: pointer;
 }
 
 
-.header-frills{
+.header-frills {
     width: 100%;
     height: 15px;
     background: var(--frills) center center repeat-x;
@@ -55,3 +56,15 @@ header{
     border-bottom: 1px solid #E5E5E5;
 }
 
+@media (max-width:700px) {
+    .section-header {
+        justify-content: space-between;
+    }
+    
+    .section-logo{
+        position: unset;
+        align-content: center;
+        margin-left: 10px;
+    }
+
+}
