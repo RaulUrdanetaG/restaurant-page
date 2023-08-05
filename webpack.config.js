@@ -17,22 +17,26 @@ module.exports = {
   ],
   module: {
     rules: [
+
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(svg|png|jpg|gif)$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            name: "[name].[hash].[ext]",
-            outputPath: "images/"
+        test: /\.html$/i,
+        loader: 'html-loader',
+        options: {
+          sources: {
+            list: [{
+              tag: "video",
+              attribute: "src",
+              type: "src",
+            }]
           }
-        }
+        },
       },
       {
-        test: /\.mp4$/,
+        test: /\.(mp4|svg|png|jpg|gif)$/,
         use: {
           loader: "file-loader",
           options: {
@@ -44,10 +48,6 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
-      },
-      {
-        test: /\.mp4$/,
-        use: 'file-loader?name=videos/[name].[ext]',
       },
     ],
   },
