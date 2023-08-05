@@ -9,6 +9,11 @@ import homeBurger from '../assets/images/home-media/home-buguer.png';
 import facebookLogo from '../assets/images/home-media/icons/logo-facebook.svg';
 import pulledPork from '../assets/images/menu-images/pulled-pork-roll.jpg';
 import friedChiken from '../assets/images/menu-images/fried-chicken.jpg';
+import croqueBurger from '../assets/images/menu-images/croque-garcon-burger.jpg';
+import blockBurger from '../assets/images/menu-images/block-burger.jpg';
+import baconAndBert from '../assets/images/menu-images/bacon-and-bert.jpg';
+import poutine from '../assets/images/menu-images/poutine.jpg';
+import duckDuck from '../assets/images/menu-images/duck-duck-goose-fries.jpg';
 
 function createMenuItem(img, title, attribute, description) {
 
@@ -152,7 +157,7 @@ function createMenu() {
         'PC FARM FRIED CHICKEN THIGHS',
         'spicy',
         'Order yourself 2, 3, or 4 pieces of super-juicy PCF buttermilk soaked, crispy chicken. So tasty! Not to be missed. Try it "Nashville hot"!'));
-    mainMenuContainer.appendChild(createMenuItem('croque-garcon-burger.jpg',
+    mainMenuContainer.appendChild(createMenuItem(croqueBurger,
         'CROQUE GARCON BURGER',
         '', `It rhymes with "smoke cars on," and it's a 1/3 pound Jon's Naturals burger with cheese, ham, a sunny-side-up Evetta Farms egg, green onion, mustard, and truffle mayo on a Ciabatta roll.`));
 
@@ -186,16 +191,16 @@ function createMenu() {
     usaTodayLink.innerHTML = `<p class = 'usa-article-title'>Alton Brown's favorite restaurants from a cross-country trip</p><br><p class = 'usa-article-date'>June 26, 2015</p>`
     usaTodayContainer.appendChild(usaTodayLink);
 
-    mainMenuContainer.appendChild(createMenuItem('block-burger.jpg',
+    mainMenuContainer.appendChild(createMenuItem(blockBurger,
         'BLOCK BURGER',
         'vegan', `Earn your street cred by diving into this 1/3 pound Jon's Naturals burger served with gouda cheese, mayo, mustard, ketchup, lettuce, tomato, onion, and pickle.`));
-    mainMenuContainer.appendChild(createMenuItem('bacon-and-bert.jpg',
+    mainMenuContainer.appendChild(createMenuItem(baconAndBert,
         'BACON & BRIE',
         '', `Thick-cut bacon, Brie, seasonal fruit butter, and arugula served on Le Quartier bread.`));
-    mainMenuContainer.appendChild(createMenuItem('poutine.jpg',
+    mainMenuContainer.appendChild(createMenuItem(poutine,
         'POUTINE',
         '', `A gift from north of the border. French fries topped with cheese curds and smothered in beef gravy.`));
-    mainMenuContainer.appendChild(createMenuItem('duck-duck-goose-fries.jpg',
+    mainMenuContainer.appendChild(createMenuItem(duckDuck,
         'DUCK DUCK GOOSE FRIES',
         '', `Duck confit, crispy skin, cheese curds, mayo, gravy, and gooseberry gastrique — yeah, you read that right — over a basket of fries.`));
 
