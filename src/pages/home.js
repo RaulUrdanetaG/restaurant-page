@@ -3,6 +3,10 @@ import createFooter from '../sections/footer';
 
 import mainVideo from '../assets/images/home-media/homeVideo.mp4';
 
+import farmToTable from '../assets/images/home-media/icons/farm-to-table.svg';
+import homeBurguer from '../assets/images/home-media/home-buguer.png';
+import facebookLogo from '../assets/images/home-media/icons/logo-facebook.svg';
+
 function createHome() {
     const content = document.getElementById('content');
 
@@ -32,7 +36,7 @@ function createHome() {
     hero.appendChild(homeTitleLogoContainer);
 
     const homeTitleLogo = document.createElement('img');
-    homeTitleLogo.src = '../src/assets/images/home-media/icons/farm-to-table.svg';
+    homeTitleLogo.src = farmToTable;
     homeTitleLogo.classList.add('street-food');
     homeTitleLogoContainer.appendChild(homeTitleLogo);
 
@@ -48,7 +52,7 @@ function createHome() {
     burguerLink.classList.add('left-info');
     burguerLink.href = "https://www.facebook.com/Block-16-274838819236148";
     burguerLink.target = '_blank';
-    burguerLink.innerHTML = `<img src='../src/assets/images/home-media/home-buguer.png'>`;
+    burguerLink.innerHTML = `<img src='${homeBurguer}'>`;
     dailySpecialContainer.appendChild(burguerLink);
 
     const rightInfoContainer = document.createElement('div');
@@ -67,7 +71,7 @@ function createHome() {
     fbCallout.classList.add('fb-callout');
     fbCallout.href = 'https://www.facebook.com/Block-16-274838819236148';
     fbCallout.target = '_blank';
-    fbCallout.innerHTML = 'FOLLOW US ON FACEBOOK TO SEE DAILY SPECIALS IN YOUR "FEED"! <img src = "../src/assets/images/home-media/icons/logo-facebook.svg">';
+    fbCallout.innerHTML = `FOLLOW US ON FACEBOOK TO SEE DAILY SPECIALS IN YOUR "FEED"! <img src = "${facebookLogo}">`;
     rightInfoContainer.appendChild(fbCallout);
 
     const oneThird = document.createElement('div');
