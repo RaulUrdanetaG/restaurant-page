@@ -162,5 +162,6 @@ footer h4::before {
     .creator-info{
         align-self: center;
         margin: 10px 0;
+        color: white;
     }
 }
