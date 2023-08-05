@@ -22,12 +22,32 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        test: /\.(svg|png|jpg|gif)$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[hash].[ext]",
+            outputPath: "images/"
+          }
+        }
+      },
+      {
+        test: /\.mp4$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[hash].[ext]",
+            outputPath: "videos/"
+          }
+        }
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
+      },
+      {
+        test: /\.mp4$/,
+        use: 'file-loader?name=videos/[name].[ext]',
       },
     ],
   },

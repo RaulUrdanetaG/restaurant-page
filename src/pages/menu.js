@@ -300,7 +300,7 @@ function loadMenu() {
 
     const main = document.getElementById('content');
     main.innerHTML = '';
-    
+
     createNavBar();
     createMenu();
     createFooter();

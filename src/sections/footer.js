@@ -1,3 +1,5 @@
+import footerVideoBack from '../assets/images/home-media/footerVideo.mp4';
+import gitHubLogo from '../assets/images/home-media/icons/logo-github.svg'
 
 function createFooter() {
     const content = document.getElementById('content');
@@ -14,7 +16,7 @@ function createFooter() {
     footer.appendChild(footerBackground);
 
     const footerVideo = document.createElement('source');
-    footerVideo.src = '../src/assets/images/home-media/footerVideo.mp4';
+    footerVideo.src = footerVideoBack;
     footerVideo.type = 'video/mp4';
     footerBackground.appendChild(footerVideo);
 
@@ -81,7 +83,7 @@ function createFooter() {
 
     const websiteInfo = document.createElement('div');
     websiteInfo.classList.add('creator-info');
-    websiteInfo.innerHTML='<h3>Made by </h3><a href="https://github.com/RaulUrdanetaG" target="_blank"><img src="../src/assets/images/home-media/icons/logo-github.svg" alt="Github logo"></a><h3><a href="https://github.com/RaulUrdanetaG" target="_blank">Raul Urdaneta</a></h3>';
+    websiteInfo.innerHTML=`<h3>Made by </h3><a href="https://github.com/RaulUrdanetaG" target="_blank"><img src="${gitHubLogo}" alt="Github logo"></a><h3><a href="https://github.com/RaulUrdanetaG" target="_blank">Raul Urdaneta</a></h3>`;
     footerContainer.appendChild(websiteInfo);
 
 }

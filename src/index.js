@@ -10,9 +10,6 @@ import loadMenu from './pages/menu';
 import loadAbout from './pages/about';
 
 loadHome();
-// loadMenu();
-// loadAbout();
-
 
 function checkButtons(){
 

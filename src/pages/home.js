@@ -1,8 +1,7 @@
 import createNavBar from '../sections/nav-bar';
 import createFooter from '../sections/footer';
 
-import loadMenu from './menu';
-
+import mainVideo from '../assets/images/home-media/homeVideo.mp4';
 
 function createHome() {
     const content = document.getElementById('content');
@@ -24,7 +23,7 @@ function createHome() {
     hero.appendChild(homeVideo);
 
     const homeBackgroundVideo = document.createElement('source');
-    homeBackgroundVideo.src = '../src/assets/images/home-media/homeVideo.mp4';
+    homeBackgroundVideo.src = mainVideo;
     homeBackgroundVideo.type = 'video/mp4';
     homeVideo.appendChild(homeBackgroundVideo);
 
@@ -33,7 +32,7 @@ function createHome() {
     hero.appendChild(homeTitleLogoContainer);
 
     const homeTitleLogo = document.createElement('img');
-    homeTitleLogo.src = '../src/assets/images/home-media/icons/farm-to-table.svg'
+    homeTitleLogo.src = '../src/assets/images/home-media/icons/farm-to-table.svg';
     homeTitleLogo.classList.add('street-food');
     homeTitleLogoContainer.appendChild(homeTitleLogo);
 
