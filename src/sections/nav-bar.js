@@ -1,4 +1,5 @@
 import B16Logo from '../assets/images/home-media/logo@2x.png';
+import headerFrills from '../assets/images/header-frills.png';
 
 function createNavBar() {
     const content = document.getElementById('content');
@@ -40,6 +41,7 @@ function createNavBar() {
 
     const frills = document.createElement('div');
     frills.classList.add('header-frills');
+    frills.style.setProperty('--frills',`url(${headerFrills})`);
     header.appendChild(frills);
 
     sectionHeaderLogo.appendChild(headerLogo);

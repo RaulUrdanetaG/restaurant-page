@@ -10,6 +10,10 @@ import freeHighFives from '../assets/images/home-media/icons/free-high-fives.svg
 import rollUpSleeves from '../assets/images/home-media/icons/roll-up-your-sleeves.svg';
 import realFood from '../assets/images/home-media/icons/real-local-food.svg';
 
+import onion from '../assets/images/home-media/illustration-onion.png';
+import chicken from '../assets/images/home-media/illustration-chicken.png';
+import beet from '../assets/images/home-media/illustration-plant.png';
+
 function createHome() {
     const content = document.getElementById('content');
 
@@ -83,6 +87,7 @@ function createHome() {
 
     const column1 = document.createElement('div');
     column1.classList.add('column-home');
+    column1.style.setProperty('--onionBg',`url('${onion}')`);
     oneThird.appendChild(column1);
 
     const titleImg1 = document.createElement('img');
@@ -110,6 +115,7 @@ function createHome() {
 
     const columnP2 = document.createElement('p');
     columnP2.innerText = `Our street-style food is bold, imaginative, and deliciously messy. Grab some napkins and eat up.`;
+    column2.style.setProperty('--chickenBg',`url('${chicken}')`);
     column2.append(columnP2);
 
     const columnA2 = document.createElement('a');
@@ -120,6 +126,7 @@ function createHome() {
 
     const column3 = document.createElement('div');
     column3.classList.add('column-home');
+    column3.style.setProperty('--beetBg',`url('${beet}')`);
     oneThird.appendChild(column3);
 
     const titleImg3 = document.createElement('img');

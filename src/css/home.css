@@ -168,16 +168,16 @@ video {
 }
 
 .home-callouts .column-home:first-child {
-    background: white url(../assets/images/home-media/illustration-onion.png) center center no-repeat;
+    background: white var(--onionBg) center center no-repeat;
     padding: 84px 30px 46px;
 }
 
 .home-callouts .column-home:nth-child(2) {
-    background: white url(../assets/images/home-media/illustration-chicken.png) center center no-repeat;
+    background: white var(--chickenBg) center center no-repeat;
     padding: 72px 30px 46px;
 }
 
 .home-callouts .column-home:last-child {
-    background: white url(../assets/images/home-media/illustration-plant.png) center center no-repeat;
+    background: white var(--beetBg) center center no-repeat;
     padding: 94px 30px 46px;
 }
