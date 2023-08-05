@@ -268,23 +268,20 @@ function createMenu() {
     secondaryMenu.appendChild(createMenuItemNoImg(`OMAHA FRIES`,
         '', `Topped with wagyu sloppy joe, griddled cheese curds, house ranch, Dorothy Lynch, scallion, and Doritos.`));
 
-    const sidesDrinksMenuTitle = document.createElement('div');
-    sidesDrinksMenuTitle.classList.add('sides-drinks-menu-title');
-    menuContainer.appendChild(sidesDrinksMenuTitle);
-
-    const sidesTitle = document.createElement('h4');
-    sidesTitle.classList.add('sides-drinks-title');
-    sidesTitle.innerHTML = 'SIDES';
-    sidesDrinksMenuTitle.appendChild(sidesTitle);
-
-    const drinksTitle = document.createElement('h4');
-    drinksTitle.classList.add('sides-drinks-title');
-    drinksTitle.innerHTML = 'DRINKS';
-    sidesDrinksMenuTitle.appendChild(drinksTitle);
 
     const sidesDrinksMenu = document.createElement('div');
     sidesDrinksMenu.classList.add('secondary-menu');
     menuContainer.appendChild(sidesDrinksMenu);
+
+    const sidesTitle = document.createElement('h4');
+    sidesTitle.classList.add('sides-title');
+    sidesTitle.innerHTML = 'SIDES';
+    sidesDrinksMenu.appendChild(sidesTitle);
+
+    const drinksTitle = document.createElement('h4');
+    drinksTitle.classList.add('drinks-title');
+    drinksTitle.innerHTML = 'DRINKS';
+    sidesDrinksMenu.appendChild(drinksTitle);
 
     const sides = document.createElement('div');
     sides.innerHTML = `SEASONED FRIES<br>SWEET POTATO FRIES<br>SIDE SALAD`;

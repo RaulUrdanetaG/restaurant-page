@@ -9,7 +9,7 @@ import loadHome from '../src/pages/home';
 import loadMenu from './pages/menu';
 import loadAbout from './pages/about';
 
-loadHome();
+loadMenu();
 
 function checkButtons(){
 

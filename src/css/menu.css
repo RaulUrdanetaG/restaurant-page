@@ -7,28 +7,77 @@
 .main-menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 0px;
+    gap: 10px;
     max-width: 1200px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .menu-item {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     justify-items: center;
     margin-bottom: 30px;
 }
 
 .item-img {
-    max-width: 520px;
-    margin: 0 auto 20px;
+    display: flex;
+    width: clamp(220px,100%,520px);
+    margin: 0 10px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.name {
+    font-size: 30px;
+    color: #333333;
+    font-weight: 300;
+    margin: 0;
+}
+
+.attribute-img-s {
+    width: 28px;
+}
+
+.attribute-img-v {
+    width: 18px;
+}
+
+.attribute-img-sv {
+    width: 50px;
+}
+
+
+.separator {
+    width: 60px;
+    height: 2px;
+    background-color: #494949;
+    margin: 8px auto;
+}
+
+.item-description {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    margin: 0 1.5vw 19.6px;
+    margin-top: 0;
+    color: #494949;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 300;
 }
 
 .menu-header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1200px;
+    margin: auto;
     padding-top: 43px;
 }
 
@@ -36,7 +85,7 @@
     margin: 0;
     font-family: 'Montserrat',sans-serif;
     padding: 13px;
-    width: 437px;
+    width: min(100%,437px);
     letter-spacing: 5px;
     text-align: center;
     font-size: 15px;
@@ -143,51 +192,6 @@
     margin: 0;
 }
 
-.title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 0;
-}
-
-.name {
-    font-size: 30px;
-    color: #333333;
-    font-weight: 300;
-    margin: 0;
-}
-
-.attribute-img-s {
-    width: 28px;
-}
-
-.attribute-img-v {
-    width: 18px;
-}
-
-.attribute-img-sv {
-    width: 50px;
-}
-
-
-.separator {
-    width: 60px;
-    height: 2px;
-    background-color: #494949;
-    margin: 8px auto;
-}
-
-.item-description {
-    font-family: 'Merriweather', serif;
-    font-size: 14px;
-    margin: 19.6px 1.5vw;
-    margin-top: 0;
-    color: #494949;
-    text-align: center;
-    line-height: 25px;
-    font-weight: 300;
-}
 
 .daily-special-menu {
     display: flex;
@@ -197,6 +201,7 @@
 .secondary-menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
     column-gap: 50px;
     margin-bottom: 70px;
 }
@@ -206,27 +211,30 @@
     gap: 50px;
 }
 
-.sides-drinks-title::before {
+.sides-title::before,
+.drinks-title::before   {
     position: absolute;
     top: 51%;
-    right: 60%;
+    right: 70%;
     width: 50%;
     height: 1px;
     content: '';
     background-color: #CCCCCC;
 }
 
-.sides-drinks-title::after {
+.sides-title::after,
+.drinks-title::after  {
     position: absolute;
     top: 51%;
-    left: 60%;
+    left: 70%;
     width: 50%;
     height: 1px;
     content: '';
     background-color: #CCCCCC;
 }
 
-.sides-drinks-title {
+.sides-title,
+.drinks-title {
     display: flex;
     align-content: center;
     flex: 1;
@@ -242,7 +250,7 @@
     margin: 0;
     ;
     margin-bottom: 20px;
-    width: 250px;
+    width: min(100%,450px);
 }
 
 .sides {
@@ -260,7 +268,7 @@
     border: 2px solid #CCCCCC;
     align-items: center;
     justify-content: center;
-    grid-row: 2/4;
+    grid-row: 3/5;
 }
 
 .combo-container p {
@@ -278,4 +286,175 @@
     color: #494949;
     font-size: 16px;
     margin: 0 0 22px;
+}
+
+@media (max-width:1220px){
+    .daily-specia-menul{
+        margin: 0 20px 20px;
+    }
+
+}
+
+@media (max-width:1170px){
+
+    .options-container{
+        display: flex;
+        gap: 20px;
+        align-self: center;
+        align-content: center;
+        margin: 0;
+    }
+    
+    .usa-img {
+        margin: 0 auto 20px;
+    }
+    
+    .usa-title {
+        font-size: 25px;
+        margin: 0 10% 10px;
+    }
+    
+    .usa-subtitle {
+        font-size: 15px;
+        margin: 0 10% 10px;
+        font-family: 'merriweather', serif;
+        color: #494949;
+        line-height: 20px;
+    }
+    
+    .usa-separator {
+        height: 7px;
+        width: 80%;
+        margin: 0 0 10px;
+        content: '';
+        border-bottom: 1px solid #CCCCCC;
+        border-top: 1px solid #CCCCCC;
+    }
+    
+    .usa-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        margin: 0 25% 10px;
+    }
+    
+    .usa-article-title {
+        margin: 0;
+        font-size: 15px;
+        font-family: 'Bitter', serif;
+        color: black;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    
+    .usa-article-date {
+        color: #666666;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px;
+        font-size: 12px;
+        margin: 0;
+    }
+}
+
+@media (max-width:900px){
+    .daily-special-menu{
+        flex-direction: column;
+    }
+    .right-info{
+        border-left: 2px solid #E2E2E2;
+    }
+
+    .left-info{
+        border: none;
+    }
+}
+
+@media (max-width:700px){
+
+    .menu-container{
+        margin: 0 20px;
+        
+    }
+
+    .main-menu{
+        grid-template-columns: 1fr;
+    }
+
+    .secondary-menu{
+        grid-template-columns: 1fr;
+    }
+
+    .usa-today-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .usa-img {
+        margin: 0 auto 20px;
+    }
+    
+    .usa-title {
+        font-size: 34px;
+        margin: 0 10% 24px;
+    }
+    
+    .usa-subtitle {
+        font-size: 17px;
+        margin: 0 10% 40px;
+        font-family: 'merriweather', serif;
+        color: #494949;
+        line-height: 30px;
+    }
+    
+    .usa-separator {
+        height: 7px;
+        width: 80%;
+        margin: 0 0 30px;
+        content: '';
+        border-bottom: 1px solid #CCCCCC;
+        border-top: 1px solid #CCCCCC;
+    }
+    
+    .usa-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        margin: 0 25% 17px;
+    }
+    
+    .usa-article-title {
+        margin: 0;
+        font-size: 15px;
+        font-family: 'Bitter', serif;
+        color: black;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    
+    .usa-article-date {
+        color: #666666;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .sides-title{
+        grid-row: 1/2;
+    }
+    .sides{
+        grid-row: 2/3;
+        margin-bottom: 30px;
+    }
+
+    .combo-container{
+        margin-bottom: 30px;
+    }
+
+
 }
