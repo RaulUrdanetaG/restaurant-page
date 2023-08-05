@@ -15,7 +15,6 @@ footer {
     overflow: hidden;
     background: black;
     width: 100%;
-    height: 700px;
 }
 
 footer .info-container {
@@ -27,16 +26,16 @@ footer .info-container {
     z-index: 2;
     color: white;
     height: 100%;
-    margin: 0 352.5px;
+    margin: 0 18vw;
 }
 
-.column{
+.column {
     width: 490px;
     margin-right: 35vw;
     margin-top: 5vh;
 }
 
-#logo-footer{
+#logo-footer {
     display: flex;
     align-items: end;
     gap: 15px;
@@ -49,7 +48,7 @@ footer h4 {
     border-bottom: 1px solid #4d4d4d;
 }
 
-footer h4::before{
+footer h4::before {
     content: '';
     width: 105px;
     height: 73px;
@@ -57,29 +56,30 @@ footer h4::before{
     background: var(--b16Footer) center center no-repeat;
 }
 
-.store-hours{
+.store-hours {
     padding-bottom: 18px;
     border-bottom: 1px solid #4d4d4d;
     margin-bottom: 16px;
 }
 
-.store-hours p{
+.store-hours p {
     margin: 0px;
     font-size: 20px
 }
 
-.store-location{
+.store-location {
     margin-bottom: 16px;
     padding-bottom: 18px;
     color: #4d4d4d;
     font-size: 26px;
     border-bottom: 1px solid #4d4d4d;
 }
-.store-location p{
+
+.store-location p {
     margin: 0;
 }
 
-.payment-info{
+.payment-info {
     font-size: 20px;
     padding-bottom: 16px;
     margin-bottom: 18px;
@@ -87,16 +87,16 @@ footer h4::before{
     border-bottom: 1px solid #4d4d4d;
 }
 
-.disclaimer{
+.disclaimer {
     font-size: 15px;
     color: #7d7d7d;
 }
 
-.disclaimer a{
+.disclaimer a {
     color: white;
 }
 
-.creator-info{
+.creator-info {
     display: flex;
     align-items: center;
     align-self: center;
@@ -104,17 +104,52 @@ footer h4::before{
     font-size: 20px;
 }
 
-.creator-info h3{
+.creator-info h3 {
     margin: 0;
 }
 
-.creator-info a{
+.creator-info a {
     text-decoration: none;
     color: white;
 }
 
-.creator-info img{
+.creator-info img {
     width: 30px;
     filter: invert(100%) sepia(0%) saturate(7494%) hue-rotate(9deg) brightness(90%) contrast(116%);
 }
 
+@media (max-width:700px) {
+    #footer-background{
+        height: calc(100% + 30%);
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        max-width: 490px;
+        margin: 0;
+        margin-top: 5vh;
+    }
+
+    footer h4::before {
+        content: '';
+        min-width: 105px;
+        min-height: 73px;
+    }
+
+    #logo-footer {
+        justify-content: center;
+    }
+
+    .store-hours {
+        text-align: center;
+    }
+
+    .store-location {
+        text-align: center;
+    }
+
+    .payment-info {
+        text-align: center;
+    }
+}
