@@ -2,7 +2,7 @@
 
 ![final app gif](./src/assets/finalApp.gif)
 
-# Learngings
+# Learnings
 
 - Configured webpack.config.js to process and load css, videos, images and fonts, everything in development mode, and setting an HTML template.
 - Configured development tool watch to view changes made in real time.
